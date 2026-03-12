@@ -118,16 +118,10 @@ ssid:PHICOMM_5G = server:10.0.0.1
 
 [Plugin]
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/missav-clean.plugin, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Switch_github_mirror.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/1.1.1.1.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Weixin_external_links_unlock.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Weixin_Official_Accounts_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx, enabled=true
@@ -136,6 +130,12 @@ https://kelee.one/Tool/Loon/Lpx/HUPU_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Spotify_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Switch_github_mirror.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/1.1.1.1.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weixin_external_links_unlock.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=兜底后备策略, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
