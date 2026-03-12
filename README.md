@@ -75,7 +75,7 @@ proxy-configs/
 > [!IMPORTANT]
 > 配置文件里的规则、策略组和插件引用会随着上游项目更新而变化；使用前请结合自己的网络环境和客户端版本自行检查。
 
-- `Surge macOS` 对策略组图标的支持不稳定，因此模板里不依赖这项能力
+- `Surge macOS` 对策略组图标显示并不稳定，所以配置模板里默认不依赖这项功能
 - 如果某项规则只对单一客户端有效，默认直接放在对应客户端目录下维护
 
 ## 感谢
@@ -83,7 +83,7 @@ proxy-configs/
 这个仓库只是我对日常自用配置的整理和归档，很多规则、图标、插件和分流思路都参考或直接引用了其他作者和项目的公开成果，在这里一并致谢：
 
 - [`blackmatrix7/ios_rule_script`](https://github.com/blackmatrix7/ios_rule_script)
-- [`kelee插件中心`](https://hub.kelee.one)
+- [`kelee 插件中心`](https://hub.kelee.one)
 - [`Koolson/Qure`](https://github.com/Koolson/Qure)
 - [`limbopro/Adblock4limbo`](https://github.com/limbopro/Adblock4limbo)
 - [`luestr/ShuntRules`](https://github.com/luestr/ShuntRules)
