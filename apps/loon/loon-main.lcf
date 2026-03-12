@@ -91,7 +91,7 @@ IP-CIDR6,fc00::/18,DIRECT
 FINAL,兜底后备策略
 
 [Remote Rule]
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/rules/adblock4limbo-domains.list, policy=REJECT, tag=Adblock4limbo, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AdvertisingLite/AdvertisingLite.list, policy=REJECT, tag=AdvertisingLite, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/rules/tradingview.list, policy=TradingView, tag=TradingView, enabled=true
 https://rule.kelee.one/Loon/YouTube.lsr, policy=YouTube, tag=YouTube, enabled=true
 https://rule.kelee.one/Loon/Gemini.lsr, policy=Gemini, tag=Gemini, enabled=true
@@ -119,6 +119,7 @@ ssid:PHICOMM_5G = server:10.0.0.1
 [Script]
 
 [Plugin]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AdvertisingLite/AdvertisingLite_MITM.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true

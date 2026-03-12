@@ -85,7 +85,6 @@ proxy-configs/
 - [`blackmatrix7/ios_rule_script`](https://github.com/blackmatrix7/ios_rule_script)
 - [`kelee 插件中心`](https://hub.kelee.one)
 - [`Koolson/Qure`](https://github.com/Koolson/Qure)
-- [`limbopro/Adblock4limbo`](https://github.com/limbopro/Adblock4limbo)
 - [`luestr/ShuntRules`](https://github.com/luestr/ShuntRules)
 - [`Orz-3/mini`](https://github.com/Orz-3/mini)
 
