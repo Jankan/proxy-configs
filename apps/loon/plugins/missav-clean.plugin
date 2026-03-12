@@ -1,23 +1,9 @@
 #!name=MissAV 去广告
-#!desc=基于 Adblock4limbo 的 MissAV 网页去广告插件，适用于 iOS 和 iPadOS 浏览器场景
+#!desc=基于 Adblock4limbo 整理，仅保留 MissAV 相关重写和脚本
 #!author=limbopro / Jankan
 #!homepage=https://github.com/Jankan/proxy-configs
 #!system=iOS,iPadOS
 #!tag=去广告,MissAV
-
-[rule]
-DOMAIN-SUFFIX,trackwilltrk.com,REJECT
-DOMAIN-SUFFIX,rmhfrtnd.com,REJECT
-DOMAIN-SUFFIX,video.ktkjmp.com,REJECT
-DOMAIN-SUFFIX,go.myavlive.com,REJECT
-DOMAIN-SUFFIX,gsjln04hd.com,REJECT
-DOMAIN-SUFFIX,creative.myavlive.com,REJECT
-DOMAIN-SUFFIX,creative.live.missav.com,REJECT
-DOMAIN-SUFFIX,cashewsforlife208.com,REJECT
-DOMAIN-SUFFIX,phloxsub73ulata.com,REJECT
-DOMAIN-SUFFIX,xxxjmp.com,REJECT
-DOMAIN-SUFFIX,pitrespite.com,REJECT
-DOMAIN-SUFFIX,alexametrics.com,REJECT
 
 [rewrite]
 ^https?:\/\/creative\.live\.missav\.com\/widgets\/Spot\/lib\.js reject

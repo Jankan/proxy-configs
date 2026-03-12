@@ -91,7 +91,7 @@ IP-CIDR6,fc00::/18,DIRECT
 FINAL,兜底后备策略
 
 [Remote Rule]
-https://raw.githubusercontent.com/limbopro/Adblock4limbo/refs/heads/main/QuantumultX/rule/Adblock4limbo.list, policy=REJECT, tag=Adblock4limbo, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/rules/adblock4limbo-domains.list, policy=REJECT, tag=Adblock4limbo, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/rules/tradingview.list, policy=TradingView, tag=TradingView, enabled=true
 https://rule.kelee.one/Loon/YouTube.lsr, policy=YouTube, tag=YouTube, enabled=true
 https://rule.kelee.one/Loon/Gemini.lsr, policy=Gemini, tag=Gemini, enabled=true
