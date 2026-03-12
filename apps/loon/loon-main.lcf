@@ -119,7 +119,6 @@ ssid:PHICOMM_5G = server:10.0.0.1
 [Script]
 
 [Plugin]
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/missav-clean.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
