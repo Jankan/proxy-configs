@@ -145,3 +145,11 @@ https://kelee.one/Tool/Loon/Lpx/TestFlightRegionUnlock.lpx, policy=DIRECT, enabl
 https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy=兜底后备策略, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, policy=兜底后备策略, enabled=false
 https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=兜底后备策略, enabled=false
+
+[Mitm]
+hostname = www.google.cn, www.g.cn
+skip-server-cert-verify = false
+
+# 这里留空就行，证书一般直接在 Loon 里生成和安装
+ca-p12 = 
+ca-passphrase = 
