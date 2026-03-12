@@ -33,15 +33,15 @@
 proxy-configs/
 ├── README.md
 ├── assets/
-│   └── icons/
+│   └── icons/                # 图标资源目录
 ├── apps/
-│   ├── loon/
-│   │   ├── loon-main.lcf
-│   │   ├── plugins/
-│   │   └── rules/
-│   └── surge/
-│       ├── surge-main.conf
-│       └── rules/
+│   ├── loon/                 # Loon 相关配置
+│   │   ├── loon-main.lcf     # Loon 主配置模板
+│   │   ├── plugins/          # Loon 插件目录
+│   │   └── rules/            # Loon 规则文件目录
+│   └── surge/                # Surge 相关配置
+│       ├── surge-main.conf   # Surge 主配置模板
+│       └── rules/            # Surge 规则文件目录
 ```
 
 ## 已整理内容
@@ -83,10 +83,11 @@ proxy-configs/
 这个仓库只是我对日常自用配置的整理和归档，很多规则、图标、插件和分流思路都参考或直接引用了其他作者和项目的公开成果，在这里一并致谢：
 
 - [`blackmatrix7/ios_rule_script`](https://github.com/blackmatrix7/ios_rule_script)
-- `Kelee` 相关公开规则与插件
-- [`limbopro/Adblock4limbo`](https://github.com/limbopro/Adblock4limbo)
-- [`Orz-3/mini`](https://github.com/Orz-3/mini)
+- [`kelee插件中心`](https://hub.kelee.one)
 - [`Koolson/Qure`](https://github.com/Koolson/Qure)
+- [`limbopro/Adblock4limbo`](https://github.com/limbopro/Adblock4limbo)
+- [`luestr/ShuntRules`](https://github.com/luestr/ShuntRules)
+- [`Orz-3/mini`](https://github.com/Orz-3/mini)
 
 如果某份配置、规则或图标来源于其他作者，我也会尽量在对应文件中保留原始引用地址。
 
