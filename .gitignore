@@ -1,4 +1,6 @@
 .DS_Store
+.AppleDouble
+.LSOverride
 *.swp
 *.tmp
 *.bak
@@ -6,3 +8,5 @@
 *.orig
 dist/
 tmp/
+apps/loon/private/
+apps/surge/private/
