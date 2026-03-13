@@ -1,0 +1,17 @@
+# macOS 系统更新拦截
+# 主要用于拦截更新检测、目录和下载相关主机
+# 说明：这类规则更偏向减少更新请求，不保证系统通知或红点立即消失
+
+DOMAIN,gdmf.apple.com
+DOMAIN,gdmf-ados.apple.com
+DOMAIN,mesu.apple.com
+DOMAIN,gg.apple.com
+DOMAIN,gs.apple.com
+DOMAIN,ig.apple.com
+DOMAIN,oscdn.apple.com
+DOMAIN,skl.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,swdist.apple.com
+DOMAIN,swdownload.apple.com
+DOMAIN,swscan.apple.com
+DOMAIN,updates-http.cdn-apple.com
