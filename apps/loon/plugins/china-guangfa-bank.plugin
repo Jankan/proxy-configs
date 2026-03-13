@@ -1,0 +1,17 @@
+#!name=广发银行
+#!desc=移除开屏图和活动广告；如未生效可尝试清缓存或重新安装 App。
+#!author=Jankan
+#!homepage=https://github.com/Jankan/proxy-configs
+#!icon=https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/china-guangfa-bank.png
+#!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/china-guangfa-bank.plugin
+#!date=2026-03-13
+
+# 规则参考：fmz200/wool_scripts
+
+[Rewrite]
+^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/accurate\/202\d{5}\/.*\.(png|jpg) reject-200
+^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/202\d{5}\/.*\.(png|jpg) reject-200
+^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg) reject-img
+
+[MITM]
+hostname = static.95508.com, mps.95508.com

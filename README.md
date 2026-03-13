@@ -83,6 +83,7 @@ proxy-configs/
 这个仓库只是我对日常自用配置的整理和归档，很多规则、图标、插件和分流思路都参考或直接引用了其他作者和项目的公开成果，在这里一并致谢：
 
 - [`blackmatrix7/ios_rule_script`](https://github.com/blackmatrix7/ios_rule_script)
+- [`fmz200/wool_scripts`](https://github.com/fmz200/wool_scripts)
 - [`kelee 插件中心`](https://hub.kelee.one)
 - [`Koolson/Qure`](https://github.com/Koolson/Qure)
 - [`luestr/ShuntRules`](https://github.com/luestr/ShuntRules)

@@ -1,0 +1,15 @@
+#!name=工商银行
+#!desc=移除 App 启动广告；如未生效可尝试清缓存或重新安装 App。
+#!author=Jankan
+#!homepage=https://github.com/Jankan/proxy-configs
+#!icon=https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/icbc.png
+#!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/icbc.plugin
+#!date=2026-03-13
+
+# 规则参考：fmz200/wool_scripts
+
+[Rewrite]
+^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/ reject-200
+
+[MITM]
+hostname = v.icbc.com.cn
