@@ -135,6 +135,7 @@ https://kelee.one/Tool/Loon/Lpx/Spotify_remove_ads.lpx, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/china-guangfa-bank.plugin, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/icbc.plugin, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/china-merchants-bank.plugin, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/china-mobile-guangdong.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
