@@ -11,21 +11,21 @@
 ## 快速开始
 
 > [!TIP]
-> 如果你只是想快速上手，优先看 `apps/loon/loon-main.lcf` 和 `apps/surge/surge-main.conf` 这两份主配置模板。
+> 如果你只是想快速上手，优先看 `loon/loon-main.lcf` 和 `surge/surge-main.conf` 这两份主配置模板。
 
 如果你只是想直接参考现成模板，可以从这里进：
 
 | 客户端 | 入口文件 | 说明 |
 | --- | --- | --- |
-| Loon | `apps/loon/loon-main.lcf` | 公开同步的主配置模板 |
-| Surge | `apps/surge/surge-main.conf` | 公开同步的主配置模板 |
+| Loon | `loon/loon-main.lcf` | 公开同步的主配置模板 |
+| Surge | `surge/surge-main.conf` | 公开同步的主配置模板 |
 
 如果你只是想引用单独规则或插件，可以从这里进：
 
 | 类型 | 文件 | 用途 |
 | --- | --- | --- |
-| Loon 规则 | `apps/loon/rules/tradingview.list` | `TradingView` 独立规则集 |
-| Surge 规则 | `apps/surge/rules/tradingview.list` | `TradingView` 独立规则集 |
+| Loon 规则 | `loon/rules/tradingview.list` | `TradingView` 独立规则集 |
+| Surge 规则 | `surge/rules/tradingview.list` | `TradingView` 独立规则集 |
 
 ## 仓库结构
 
@@ -34,39 +34,40 @@ proxy-configs/
 ├── README.md
 ├── assets/
 │   └── icons/                # 图标资源目录
-├── apps/
-│   ├── loon/                 # Loon 相关配置
-│   │   ├── loon-main.lcf     # Loon 主配置模板
-│   │   ├── plugins/          # Loon 插件目录
-│   │   └── rules/            # Loon 规则文件目录
-│   └── surge/                # Surge 相关配置
-│       ├── surge-main.conf   # Surge 主配置模板
-│       └── rules/            # Surge 规则文件目录
+├── loon/                     # Loon 相关配置
+│   ├── loon-main.lcf         # Loon 主配置模板
+│   ├── plugins/              # Loon 插件目录
+│   ├── rules/                # Loon 规则文件目录
+│   └── README.md             # Loon 目录说明
+└── surge/                    # Surge 相关配置
+    ├── surge-main.conf       # Surge 主配置模板
+    ├── rules/                # Surge 规则文件目录
+    └── README.md             # Surge 目录说明
 ```
 
 ## 已整理内容
 
 ### Loon
 
-- 主配置模板：`apps/loon/loon-main.lcf`
-- `TradingView` 独立规则：`apps/loon/rules/tradingview.list`
+- 主配置模板：`loon/loon-main.lcf`
+- `TradingView` 独立规则：`loon/rules/tradingview.list`
 
 ### Surge
 
-- 主配置模板：`apps/surge/surge-main.conf`
-- `TradingView` 独立规则：`apps/surge/rules/tradingview.list`
+- 主配置模板：`surge/surge-main.conf`
+- `TradingView` 独立规则：`surge/rules/tradingview.list`
 
 ## 使用说明
 
 ### Loon
 
-- 复制 `apps/loon/loon-main.lcf`
+- 复制 `loon/loon-main.lcf`
 - 把占位订阅替换成你自己的真实订阅
 - 按需引用仓库内的插件和规则
 
 ### Surge
 
-- 复制 `apps/surge/surge-main.conf`
+- 复制 `surge/surge-main.conf`
 - 替换订阅入口和 `http-api` 密码
 - 按需保留或扩展现有规则集
 
@@ -93,5 +94,5 @@ proxy-configs/
 
 ## 更多说明
 
-- `apps/loon/README.md`
-- `apps/surge/README.md`
+- `loon/README.md`
+- `surge/README.md`

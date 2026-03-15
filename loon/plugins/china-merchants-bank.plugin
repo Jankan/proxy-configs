@@ -3,7 +3,7 @@
 #!author=Jankan
 #!homepage=https://github.com/Jankan/proxy-configs
 #!icon=https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/china-merchants-bank.png
-#!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/china-merchants-bank.plugin
+#!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-merchants-bank.plugin
 #!date=2026-03-13
 
 # 规则参考：fmz200/wool_scripts

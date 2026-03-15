@@ -3,7 +3,7 @@
 #!author=Jankan
 #!homepage=https://github.com/Jankan/proxy-configs
 #!icon=https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/icbc.png
-#!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/apps/loon/plugins/icbc.plugin
+#!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/icbc.plugin
 #!date=2026-03-13
 
 # 规则参考：fmz200/wool_scripts
