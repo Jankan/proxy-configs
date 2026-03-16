@@ -1,5 +1,5 @@
 # Loon 进阶配置 - 此配置文件自动选择网络时延最低的代理节点，无需人工干预，所有过程完全自动化。当连接到配备透明代理的路由器时，Loon 将使用“直连”策略，此时所有流量直接通过你的路由器；在其他网络环境中，Loon 将使用自身的“自动分流”模式访问这些网站，从而避免在已使用透明代理路由器时出现双重代理。
-# Date: 2026-03-15
+# Date: 2026-03-16
 # Author: https://jankan.com
 # 更多插件可前往 https://hub.kelee.one 安装
 #
@@ -48,7 +48,8 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 # 场景策略
 全球手动策略 = select,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
 Apple = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
-Apple  Music = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Apple_Music.png
+Apple 系统更新 = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+Apple Music = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Apple_Music.png
 Spotify = select,香港节点,日本节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
 Google = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
 YouTube = select,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
@@ -91,12 +92,12 @@ IP-CIDR6,fc00::/18,DIRECT
 FINAL,兜底后备策略
 
 [Remote Rule]
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/rules/tradingview.list, policy=TradingView, tag=TradingView, enabled=true
 https://rule.kelee.one/Loon/YouTube.lsr, policy=YouTube, tag=YouTube, enabled=true
 https://rule.kelee.one/Loon/Gemini.lsr, policy=Gemini, tag=Gemini, enabled=true
 https://rule.kelee.one/Loon/OpenAI.lsr, policy=OpenAI, tag=OpenAI, enabled=true
 https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=日本自动策略, tag=AI, enabled=true
-https://rule.kelee.one/Loon/AppleMusic.lsr, policy=Apple  Music, tag=AppleMusic, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/apple_update.list, policy=Apple 系统更新, tag=AppleUpdate, enabled=true
+https://rule.kelee.one/Loon/AppleMusic.lsr, policy=Apple Music, tag=AppleMusic, enabled=true
 https://rule.kelee.one/Loon/AppleNews.lsr, policy=美国自动策略, tag=AppleNews, enabled=true
 https://rule.kelee.one/Loon/Apple.lsr, policy=Apple, tag=Apple, enabled=true
 https://rule.kelee.one/Loon/Google.lsr, policy=Google, tag=Google, enabled=true
@@ -105,6 +106,7 @@ https://kelee.one/Tool/Loon/Lsr/TikTok.lsr, policy=TikTok, tag=TikTok, enabled=t
 https://rule.kelee.one/Loon/Telegram.lsr, policy=Telegram, tag=Telegram, enabled=true
 https://rule.kelee.one/Loon/Twitter.lsr, policy=X, tag=Twitter, enabled=true
 https://rule.kelee.one/Loon/Netflix.lsr, policy=日本自动策略, tag=Netflix, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/rules/tradingview.list, policy=TradingView, tag=TradingView, enabled=true
 https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy=DIRECT, tag=Speedtest Intl, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Global/Global.list, policy=全球手动策略, tag=Global, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AdvertisingLite/AdvertisingLite.list, policy=REJECT, tag=AdvertisingLite, enabled=true
