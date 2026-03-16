@@ -1,3 +1,7 @@
+# TradingView 相关域名
+# 主要用于覆盖主站访问、网页图表组件和静态资源加载
+# 说明：这组规则偏向于保证 TradingView 页面、嵌入行情组件和相关资源能走同一策略，减少局部加载异常
+
 DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,tradingview-widget.com
 DOMAIN,s3.tradingview.com
