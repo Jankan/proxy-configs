@@ -58,7 +58,7 @@ TradingView = select,DIRECT,香港自动策略,日本自动策略,美国自动�
 X = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/X.png
 TikTok = select,DIRECT,REJECT,香港节点,日本节点,美国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
 Telegram = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-Gemini = select,DIRECT,REJECT,日本节点,美国节点,img-url = circle.grid.2x2
+Gemini = select,DIRECT,REJECT,日本节点,美国节点,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/gemini.png
 
 # --------------------------------
 # 地区策略
