@@ -34,12 +34,12 @@ proxy-configs/
 ├── README.md
 ├── assets/
 │   └── icons/                # 图标资源目录
-├── loon/                     # Loon 相关配置
+├── loon/
 │   ├── loon-main.lcf         # Loon 主配置模板
 │   ├── plugins/              # Loon 插件目录
 │   ├── rules/                # Loon 规则文件目录
 │   └── README.md             # Loon 目录说明
-└── surge/                    # Surge 相关配置
+└── surge/
     ├── surge-main.conf       # Surge 主配置模板
     ├── rules/                # Surge 规则文件目录
     └── README.md             # Surge 目录说明
