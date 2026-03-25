@@ -121,7 +121,10 @@ ssid:PHICOMM_5G = server:10.0.0.1
 [Script]
 
 [Plugin]
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AdvertisingLite/AdvertisingLite_MITM.plugin, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
@@ -129,7 +132,6 @@ https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Weixin_Official_Accounts_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/HUPU_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, enabled=true
@@ -138,8 +140,6 @@ https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-g
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/icbc.plugin, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-merchants-bank.plugin, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-mobile-guangdong.plugin, enabled=true
-https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Switch_github_mirror.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/1.1.1.1.lpx, enabled=true
@@ -156,6 +156,6 @@ https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=兜底后备策略, enabl
 hostname = www.google.cn, www.g.cn
 skip-server-cert-verify = false
 
-# 这里留空就行，证书一般直接在 Loon 里生成和安装
+# 首次使用通常留空，Loon 会自动生成；如果之前已经生成过证书，把原来的 ca-p12 和 ca-passphrase 填到这里即可
 ca-p12 = 
 ca-passphrase = 
