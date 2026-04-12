@@ -6,10 +6,12 @@
 #!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-guangfa-bank-remove-ads.plugin
 #!date=2026-03-13
 
-# 规则参考：fmz200/wool_scripts
+# 规则参考：fmz200/wool_scripts、Moli-X/Resources
 
 [Rewrite]
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/(.+1125?.+2436|.+%.+%|.+_.+_) reject-dict
+# 开屏图资源
+^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/.+1125.+2436 reject-200
+^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/(.+%.+%|.+_.+_) reject-200
 ^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/accurate\/202\d{5}\/.*\.(png|jpg) reject-200
 ^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/202\d{5}\/.*\.(png|jpg) reject-200
 ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg) reject-img

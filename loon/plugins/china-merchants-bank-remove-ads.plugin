@@ -1,16 +1,17 @@
 #!name=招商银行
-#!desc=移除开屏图和首页横幅广告；如未生效可尝试清缓存或重新安装 App。
+#!desc=移除开屏图、首页横幅和部分独立广告域名；如未生效可尝试清缓存或重新安装 App。
 #!author=Jankan
 #!homepage=https://github.com/Jankan/proxy-configs
 #!icon=https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/china-merchants-bank.png
 #!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-merchants-bank-remove-ads.plugin
 #!date=2026-03-13
 
-# 规则参考：fmz200/wool_scripts
+# 规则参考：fmz200/wool_scripts、Moli-X/Resources
 
 [Rewrite]
 ^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig reject-200
 ^https?:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic reject-dict
+^https?:\/\/mbads\.paas\.cmbchina\.com\/ reject-200
 
 [MITM]
-hostname = webappcfg.paas.cmbchina.com, mbmodule-openapi.paas.cmbchina.com
+hostname = webappcfg.paas.cmbchina.com, mbmodule-openapi.paas.cmbchina.com, mbads.paas.cmbchina.com
