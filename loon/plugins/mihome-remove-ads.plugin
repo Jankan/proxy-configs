@@ -6,9 +6,13 @@
 #!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/mihome-remove-ads.plugin
 #!date=2026-04-12
 
+# 规则参考：daipengu/SKlite（Last active 2024-05-14）
+
+[Rewrite]
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner)(\?|$) reject-dict
+
 [Script]
-http-response ^https?:\/\/api\.m\.mi\.com\/v\d+\/app\/start script-path=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/scripts/mihome.js, requires-body=true, timeout=60, tag=米家启动净化
-http-response ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner)\? script-path=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/scripts/mihome.js, requires-body=true, timeout=60, tag=米家首页净化
+http-response ^https?:\/\/api\.m\.mi\.com\/v1\/(app\/start|order\/expressView)(\?|$) script-path=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/scripts/mihome.js, requires-body=true, timeout=60, tag=米家启动净化
 
 [MITM]
 hostname = api.m.mi.com, home.mi.com
