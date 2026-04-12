@@ -1,5 +1,5 @@
 # Loon 进阶配置 - 此配置文件自动选择网络时延最低的代理节点，无需人工干预，所有过程完全自动化。当连接到配备透明代理的路由器时，Loon 将使用“直连”策略，此时所有流量直接通过你的路由器；在其他网络环境中，Loon 将使用自身的“自动分流”模式访问这些网站，从而避免在已使用透明代理路由器时出现双重代理。
-# Date: 2026-03-16
+# Date: 2026-04-12
 # Author: https://jankan.com
 # 更多插件可前往 https://hub.kelee.one 安装
 #
@@ -124,7 +124,8 @@ ssid:PHICOMM_5G = server:10.0.0.1
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AdvertisingLite/AdvertisingLite_MITM.plugin, enabled=true
-https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/jd-remove-ads.plugin, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/mihome-remove-ads.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
@@ -136,10 +137,10 @@ https://kelee.one/Tool/Loon/Lpx/HUPU_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Spotify_remove_ads.lpx, enabled=true
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-guangfa-bank.plugin, enabled=true
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/icbc.plugin, enabled=true
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-merchants-bank.plugin, enabled=true
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-mobile-guangdong.plugin, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-guangfa-bank-remove-ads.plugin, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/icbc-remove-ads.plugin, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-merchants-bank-remove-ads.plugin, enabled=true
+https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/china-mobile-guangdong-remove-ads.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Switch_github_mirror.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/1.1.1.1.lpx, enabled=true

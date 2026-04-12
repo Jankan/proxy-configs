@@ -1,0 +1,13 @@
+#!name=米家
+#!desc=移除开屏和首页推荐横幅；主要覆盖米家启动接口与 home.mi.com 推荐位接口。
+#!author=Jankan
+#!homepage=https://github.com/Jankan/proxy-configs
+#!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/mihome-remove-ads.plugin
+#!date=2026-04-12
+
+[Script]
+http-response ^https?:\/\/api\.m\.mi\.com\/v\d+\/app\/start script-path=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/scripts/mihome.js, requires-body=true, timeout=60, tag=米家启动净化
+http-response ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner)\? script-path=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/scripts/mihome.js, requires-body=true, timeout=60, tag=米家首页净化
+
+[MITM]
+hostname = api.m.mi.com, home.mi.com
