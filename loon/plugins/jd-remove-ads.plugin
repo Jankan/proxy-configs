@@ -2,6 +2,7 @@
 #!desc=移除开屏、轻量推送、直播小窗和部分首页广告位；规则参考可莉与 GitHub 社区整理，并按当前接口做了收敛。
 #!author=Jankan
 #!homepage=https://github.com/Jankan/proxy-configs
+#!icon=https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/jd.png
 #!raw-url=https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/plugins/jd-remove-ads.plugin
 #!date=2026-04-12
 
