@@ -1,5 +1,5 @@
 # Loon 进阶配置 - 此配置文件自动选择网络时延最低的代理节点，无需人工干预，所有过程完全自动化。当连接到配备透明代理的路由器时，Loon 将使用“直连”策略，此时所有流量直接通过你的路由器；在其他网络环境中，Loon 将使用自身的“自动分流”模式访问这些网站，从而避免在已使用透明代理路由器时出现双重代理。
-# Date: 2026-04-12
+# Date: 2026-04-14
 # Author: https://jankan.com
 # 更多插件可前往 https://hub.kelee.one 安装
 #
@@ -38,7 +38,7 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 台湾节点 = NameRegex, FilterKey = "^(?=.*((?i)🇹🇼|台湾|(\b(TW|TWN|Tai|Taiwan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 日本节点 = NameRegex, FilterKey = "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|JPN|Japan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 韩国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇰🇷|韩国|韓|首尔|(\b(KR|KOR|Korea)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
-新国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|SGP|Singapore)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+新加坡节点 = NameRegex, FilterKey = "^(?=.*((?i)🇸🇬|新加坡|新国|狮|(\b(SG|SGP|Singapore)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 美国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|USA|United States)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 游戏节点 = NameRegex, FilterKey = "^(?=.*((?i)游戏|🎮|(\b(GAME)(\d+)?\b)))(?!.*((?i)回国|校园)).*$"
 全球节点 = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|失联|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
@@ -47,18 +47,18 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 # --------------------------------
 # 场景策略
 全球手动策略 = select,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-Apple = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
-Apple 系统更新 = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
-Apple Music = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Apple_Music.png
-Spotify = select,香港节点,日本节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
-Google = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
-YouTube = select,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
-OpenAI = select,DIRECT,REJECT,美国节点,日本节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+Apple = select,DIRECT,REJECT,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+Apple 系统更新 = select,DIRECT,REJECT,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+Apple Music = select,DIRECT,REJECT,全球手动策略,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Apple_Music.png
+Spotify = select,香港自动策略,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
+Google = select,DIRECT,REJECT,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
+YouTube = select,日本自动策略,新加坡自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
+OpenAI = select,DIRECT,REJECT,美国自动策略,日本自动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
 TradingView = select,DIRECT,香港自动策略,日本自动策略,美国自动策略,全球手动策略,REJECT,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/tradingview.png
-X = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/X.png
-TikTok = select,DIRECT,REJECT,香港节点,日本节点,美国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
-Telegram = select,DIRECT,REJECT,全球节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-Gemini = select,DIRECT,REJECT,日本节点,美国节点,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/gemini.png
+X = select,DIRECT,REJECT,新加坡自动策略,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/X.png
+TikTok = select,DIRECT,REJECT,香港自动策略,日本自动策略,美国自动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
+Telegram = select,DIRECT,REJECT,香港自动策略,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+Gemini = select,DIRECT,REJECT,日本自动策略,美国自动策略,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/gemini.png
 
 # --------------------------------
 # 地区策略
@@ -66,13 +66,13 @@ Gemini = select,DIRECT,REJECT,日本节点,美国节点,img-url = https://raw.gi
 台湾手动策略 = select,台湾节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 日本手动策略 = select,日本节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
 韩国手动策略 = select,韩国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
-新国手动策略 = select,新国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+新加坡手动策略 = select,新加坡节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 美国手动策略 = select,美国节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 香港自动策略 = url-test,香港节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
 台湾自动策略 = url-test,台湾节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
 日本自动策略 = url-test,日本节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
 韩国自动策略 = url-test,韩国节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
-新国自动策略 = url-test,新国节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+新加坡自动策略 = url-test,新加坡节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 美国自动策略 = url-test,美国节点,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 
 # --------------------------------
