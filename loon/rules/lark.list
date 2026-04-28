@@ -1,0 +1,5 @@
+# Lark / 飞书相关域名
+# 只保留主站和静态资源域名，方便按需单独引用
+
+DOMAIN-SUFFIX,larksuite.com
+DOMAIN-SUFFIX,larksuitecdn.com
