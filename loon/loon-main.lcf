@@ -53,13 +53,12 @@ Apple Music = select,DIRECT,REJECT,全球手动策略,img-url = https://raw.gith
 Spotify = select,香港自动策略,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Spotify.png
 Google = select,DIRECT,REJECT,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png
 YouTube = select,日本自动策略,新加坡自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png
-OpenAI = select,DIRECT,REJECT,美国自动策略,日本自动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
-TradingView = select,DIRECT,香港自动策略,日本自动策略,美国自动策略,全球手动策略,REJECT,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/tradingview.png
-Lark = select,DIRECT,香港自动策略,日本自动策略,美国自动策略,全球手动策略,REJECT,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/lark.jpg
+OpenAI = select,DIRECT,REJECT,美国自动策略,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+TradingView = select,DIRECT,REJECT,香港自动策略,日本自动策略,美国自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/tradingview.png
 X = select,DIRECT,REJECT,新加坡自动策略,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/X.png
-TikTok = select,DIRECT,REJECT,香港自动策略,日本自动策略,美国自动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
+TikTok = select,DIRECT,REJECT,香港自动策略,日本自动策略,美国自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TikTok.png
 Telegram = select,DIRECT,REJECT,香港自动策略,日本自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-Gemini = select,DIRECT,REJECT,日本自动策略,美国自动策略,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/gemini.png
+Gemini = select,DIRECT,REJECT,日本自动策略,美国自动策略,全球手动策略,img-url = https://raw.githubusercontent.com/Jankan/proxy-configs/main/assets/icons/gemini.png
 
 # --------------------------------
 # 地区策略
@@ -108,7 +107,6 @@ https://rule.kelee.one/Loon/Telegram.lsr, policy=Telegram, tag=Telegram, enabled
 https://rule.kelee.one/Loon/Twitter.lsr, policy=X, tag=Twitter, enabled=true
 https://rule.kelee.one/Loon/Netflix.lsr, policy=日本自动策略, tag=Netflix, enabled=true
 https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/rules/tradingview.list, policy=TradingView, tag=TradingView, enabled=true
-https://raw.githubusercontent.com/Jankan/proxy-configs/main/loon/rules/lark.list, policy=Lark, tag=Lark, enabled=true
 https://kelee.one/Tool/Loon/Lsr/SpeedtestInternational.lsr, policy=DIRECT, tag=Speedtest Intl, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Global/Global.list, policy=全球手动策略, tag=Global, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AdvertisingLite/AdvertisingLite.list, policy=REJECT, tag=AdvertisingLite, enabled=true
