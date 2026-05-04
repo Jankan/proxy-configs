@@ -16,5 +16,4 @@
 ## 当前主配置里额外整理的场景
 
 - `广告拦截`：单独控制广告规则，默认走 `REJECT`，临时需要放行时切到 `DIRECT` 即可
-- `WebRTC 防泄露`：控制 `webrtc-stun-block.list`，默认走 `REJECT-DROP`，用于拦截常见 STUN/TURN UDP 端口
-- `浏览器 UDP 拦截`：控制 `browser-udp-block.list`，默认走 `REJECT-DROP`，macOS 专用，用于拦截常见浏览器的全部 UDP
+- `WebRTC 防泄露`：控制 `webrtc-stun-block.list`，默认走 `REJECT`，用于拦截常见 STUN/TURN UDP 端口
