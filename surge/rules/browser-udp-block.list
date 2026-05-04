@@ -1,0 +1,13 @@
+# macOS 浏览器 UDP 拦截
+# 主要用于阻止浏览器通过 WebRTC/STUN 暴露真实出口 IP
+# 说明：这组规则会拦截浏览器的全部 UDP，也会影响 QUIC/HTTP3、部分视频会议和实时通信。
+
+AND,((PROCESS-NAME,Google Chrome),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Google Chrome Helper),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Brave Browser),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Brave Browser Helper),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Microsoft Edge),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Microsoft Edge Helper),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Safari),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Firefox),(PROTOCOL,UDP))
+AND,((PROCESS-NAME,Arc),(PROTOCOL,UDP))
