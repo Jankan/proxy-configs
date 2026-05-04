@@ -1,0 +1,4 @@
+*.lcf linguist-language=INI linguist-detectable
+*.conf linguist-language=INI linguist-detectable
+*.list linguist-language=INI linguist-detectable
+*.plugin linguist-language=INI linguist-detectable
