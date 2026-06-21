@@ -89,6 +89,7 @@ proxy-configs/
 - [`Koolson/Qure`](https://github.com/Koolson/Qure)
 - [`luestr/ShuntRules`](https://github.com/luestr/ShuntRules)
 - [`Orz-3/mini`](https://github.com/Orz-3/mini)
+- [`SukkaW/Surge`](https://github.com/SukkaW/Surge)
 
 如果某份配置、规则或图标来源于其他作者，我也会尽量在对应文件中保留原始引用地址。
 
